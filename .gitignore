@@ -1,0 +1,31 @@
+# Secrets & Environment
+.env
+.env.local
+*.key
+*.pem
+
+# Python & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Local Storage & Uploads
+data/
+data/uploads/*
+!data/uploads/.gitkeep
+temp/
+logs/
+*.log
+
+# IDEs & System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

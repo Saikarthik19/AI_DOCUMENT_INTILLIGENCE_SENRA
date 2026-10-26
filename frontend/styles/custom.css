@@ -1,0 +1,239 @@
+/* SENTRA / DocuMind AI SaaS Styling */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Main Container Background */
+.stApp {
+    background-color: #F8FAFC;
+}
+
+/* Sidebar Customization */
+[data-testid="stSidebar"] {
+    background-color: #0F172A !important;
+    color: #F8FAFC !important;
+}
+
+[data-testid="stSidebar"] .stMarkdown p,
+[data-testid="stSidebar"] .stMarkdown h1,
+[data-testid="stSidebar"] .stMarkdown h2,
+[data-testid="stSidebar"] .stMarkdown h3,
+[data-testid="stSidebar"] span {
+    color: #E2E8F0 !important;
+}
+
+/* Sidebar Logo / Brand Header */
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0 24px 0;
+    border-bottom: 1px solid #1E293B;
+    margin-bottom: 20px;
+}
+
+.brand-icon {
+    background: linear-gradient(135deg, #2563EB, #4F46E5);
+    color: white;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.brand-title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #FFFFFF !important;
+}
+
+.user-profile-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: #1E293B;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    background: #3B82F6;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* Card Styling */
+.doc-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1E293B;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Accuracy & Metrics Section */
+.accuracy-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.accuracy-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 8px solid #2563EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #EFF6FF;
+}
+
+.accuracy-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1E293B;
+    line-height: 1;
+}
+
+.accuracy-label {
+    font-size: 10px;
+    color: #64748B;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.sub-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    flex: 1;
+}
+
+.sub-metric-item {
+    text-align: center;
+    padding: 8px;
+    background: #F8FAFC;
+    border-radius: 8px;
+}
+
+.sub-metric-val {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0F172A;
+}
+
+.sub-metric-title {
+    font-size: 11px;
+    color: #64748B;
+    margin-top: 2px;
+}
+
+/* Badges */
+.badge-green {
+    background-color: #DCFCE7;
+    color: #15803D;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge-blue {
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge-red {
+    background-color: #FEE2E2;
+    color: #B91C1C;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Chat Styling */
+.chat-bubble-user {
+    background-color: #0F172A;
+    color: #FFFFFF;
+    padding: 12px 16px;
+    border-radius: 12px 12px 2px 12px;
+    margin-left: auto;
+    max-width: 80%;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.chat-bubble-assistant {
+    background-color: #F1F5F9;
+    color: #0F172A;
+    padding: 14px 18px;
+    border-radius: 12px 12px 12px 2px;
+    margin-right: auto;
+    max-width: 85%;
+    margin-bottom: 12px;
+    border: 1px solid #E2E8F0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.citation-box {
+    background: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-left: 3px solid #2563EB;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #475569;
+}
+
+/* Buttons */
+.stButton > button {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
