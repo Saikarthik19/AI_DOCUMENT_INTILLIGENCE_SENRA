@@ -9,6 +9,34 @@
 [![Docker](https://img.shields.io/badge/Container-Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 
+<br/>
+
+<p align="center">
+  <img src="assets/sentra_preview.png" alt="SENTRA Enterprise Dashboard & RAG Console" width="95%" style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
+</p>
+
+<p align="center">
+  <em>SENTRA Intelligent Document Analysis Dashboard — Live Processing Queue, 99% Accuracy Benchmark, Side-by-Side Invoice Preview & Grounded Citations</em>
+</p>
+
+---
+
+## Table of Contents
+- [1. System Architecture](#1-system-architecture)
+- [2. Core Capabilities & Engineering Highlights](#2-core-capabilities--engineering-highlights)
+- [3. Technology Stack](#3-technology-stack)
+- [4. Quick Start (Local Setup)](#4-quick-start-local-setup)
+- [5. Running the Application](#5-running-the-application)
+- [6. Docker & Docker Compose](#6-docker--docker-compose)
+- [7. MongoDB Atlas Vector Search Configuration](#7-mongodb-atlas-vector-search-configuration)
+- [8. REST API Reference](#8-rest-api-reference)
+- [9. Automated Testing (`pytest`)](#9-automated-testing-pytest)
+- [10. Azure Container Apps (ACA) Deployment Guide](#10-azure-container-apps-aca-deployment-guide)
+- [11. Security & Production Considerations](#11-security--production-considerations)
+- [12. Author & License](#12-author--license)
+
+---
+
 **SENTRA** is a production-engineered, full-stack **AI Document Intelligence and Retrieval-Augmented Generation (RAG) Platform**. Built for enterprise workloads, financial document processing, and legal contract analysis, SENTRA enables users to ingest multi-format unstructured documents (PDF, DOCX, TXT, scanned images), extract textual and tabular hierarchies with automated OCR fallbacks, generate dense vector embeddings, search using **MongoDB Atlas Vector Search**, and synthesize fact-grounded responses with strict source citations.
 
 ---
